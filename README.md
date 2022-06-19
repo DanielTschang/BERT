@@ -17,7 +17,7 @@ sentence_1,sentence_2,label
 lable 1為同義句,0為非同義句
 
 ## 如何Train
-到config.py的Config終將self.do_train改成True
+到config.py的Config中將self.do_train改成True
 ```
 python3 run_similarity.py
 ```
