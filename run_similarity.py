@@ -78,7 +78,7 @@ class DataProcessor(object):
 
 class SimProcessor(DataProcessor):
     def get_train_examples(self, data_dir):
-        file_path = os.path.join(data_dir, 'train_zhtw.csv')
+        file_path = os.path.join(data_dir, 'train.csv')
         train_df = pd.read_csv(file_path, encoding='utf-8')
         train_data = []
         for index, train in enumerate(train_df.values):
@@ -90,7 +90,7 @@ class SimProcessor(DataProcessor):
         return train_data
 
     def get_dev_examples(self, data_dir):
-        file_path = os.path.join(data_dir, 'dev_zhtw.csv')
+        file_path = os.path.join(data_dir, 'dev.csv')
         dev_df = pd.read_csv(file_path, encoding='utf-8')
         dev_data = []
         for index, dev in enumerate(dev_df.values):
@@ -102,7 +102,7 @@ class SimProcessor(DataProcessor):
         return dev_data
 
     def get_test_examples(self, data_dir):
-        file_path = os.path.join(data_dir, 'test_zhtw.csv')
+        file_path = os.path.join(data_dir, 'test.csv')
         test_df = pd.read_csv(file_path, encoding='utf-8')
         test_data = []
         for index, test in enumerate(test_df.values):

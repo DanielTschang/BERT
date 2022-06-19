@@ -15,8 +15,8 @@ class Config():
         self.vocab_file = os.path.join(basedir1, 'model','vocab.txt')
         # train/dev/test data dir
         self.data_dir = os.path.join(basedir1, 'data')
-        self.predict_file = os.path.join(basedir1, 'data/dev_zhtw.csv')
-        self.test_file = os.path.join(basedir1, 'data/test_zhtw.csv')
+        self.predict_file = os.path.join(basedir1, 'data/dev.csv')
+        self.test_file = os.path.join(basedir1, 'data/test.csv')
         # output dir
         self.output_dir = os.path.join(basedir1, 'results')
         # pretrained model
