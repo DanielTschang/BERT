@@ -17,12 +17,14 @@ sentence_1,sentence_2,label
 lable 1為同義句,0為非同義句
 
 ## 如何Train
-到config.py的Config中將self.do_train改成True
+1. 到config.py的Config中將self.do_train改成True
+
+2. 將Bert Model(本repo使用Bert-wwm-ext [link](https://github.com/ymcui/Chinese-BERT-wwm) )放到model資料夾中
+
+3. Train
 ```
 python3 run_similarity.py
 ```
-
-
 ## Train完後
 到config.py的Config終將self.do_train改成False, self.do_predict改成True可以測試
 若要架起localhost則安裝flask(pip install flask)
